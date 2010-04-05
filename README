@@ -1,0 +1,23 @@
+Usage:
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('form input').labelover();
+    });
+</script>
+
+Add CSS:
+
+<style type="text/css" media="screen">
+    .labelover { position: relative; }
+        .labelover label {
+            position: absolute;
+            z-index: 1;
+            top: 2px;
+            left: 4px;
+        }
+        .labelover input {
+            position: relative;
+            margin: 0;
+        }
+</style>
