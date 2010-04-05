@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>jQuery LabelOver Plugin</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" type="text/javascript"></script>
+    <script src="jquery.labelover.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('form input').labelover();
+        });
+    </script>
+    
+    <style type="text/css" media="screen">
+        .labelover { position: relative; }
+            .labelover label {
+                position: absolute;
+                z-index: 1;
+                top: 2px;
+                left: 4px;
+            }
+            .labelover input {
+                position: relative;
+                margin: 0;
+            }
+    </style>
+</head>
+<body>
+    
+    <form action="#" method="get">
+        <fieldset>
+            <ol>
+                <li><label for="name">Name</label> <input type="text" id="name" name="name" /></li>
+                <li><label for="email">Email</label> <input type="text" id="email" name="email" /></li>
+                <li><label for="username">Username</label> <input type="text" id="username" name="username" /></li>
+            </ol>
+            <input type="submit" value="Submit" />
+        </fieldset>
+    </form>
+
+</body>
+</html>
