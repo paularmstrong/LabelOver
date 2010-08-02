@@ -21,6 +21,11 @@
                     $label.stop().animate({ opacity: 0 }, 200, function() { $label.css({ display: 'none' }); });
                 }
             });
+
+            
+            if ($this.val() != '') {
+                $label.hide();
+            }
             
         });
         
